@@ -10,7 +10,6 @@ const Helmet = ({ theme = {} }) => (
       query HelmetQuery {
         contentfulAbout {
           name
-          description
           profile {
             favicon16: resize(width: 16) {
               src

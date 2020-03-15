@@ -10,6 +10,8 @@ import SocialLink from '../components/SocialLink'
 import Triangle from '../components/Triangle'
 import ImageSubtitle from '../components/ImageSubtitle'
 import Hide from '../components/Hide'
+import { SectionLink } from 'react-scroll-section'
+import MouseIcon from '../components/MouseIcon'
 
 const Background = () => (
   <div>
@@ -210,6 +212,9 @@ const Projects = () => (
         </CardContainer>
       )}
     />
+    {/* <SectionLink section="projects">
+      {({ onClick }) => <MouseIcon onClick={onClick} />}
+    </SectionLink> */}
   </Section.Container>
 )
 

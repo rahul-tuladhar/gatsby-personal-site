@@ -6,7 +6,9 @@ import { SectionLink } from 'react-scroll-section'
 import Section from '../components/Section'
 import SocialLink from '../components/SocialLink'
 import MouseIcon from '../components/MouseIcon'
+import Fade from 'react-reveal/Fade'
 import Triangle from '../components/Triangle'
+import { Parallax } from 'react-parallax'
 
 const Background = () => (
   <div>
@@ -32,10 +34,26 @@ const Background = () => (
     <Triangle
       color="backgroundDark"
       height={['20vh', '20vh']}
-      width={['100vw', '100vw']}
+      width={['50vw', '50vw']}
       invertX
       invertY
     />
+    {/* <Triangle
+      color="backgroundDark"
+      height={['20vh', '20vh']}
+      width={['50vw', '50vw']}
+      // invertX
+      invertY
+    /> */}
+    <Parallax blur={10} strength={200}>
+      <Triangle
+        color="backgroundDark"
+        height={['20vh', '20vh']}
+        width={['15vw', '15vw']}
+        // invertX
+        // invertY
+      />
+    </Parallax>
   </div>
 )
 
@@ -69,42 +87,45 @@ const LandingPage = () => (
 
         return (
           <Fragment>
-            <Heading
-              textAlign="center"
-              as="h1"
-              color="primary"
-              fontSize={[5, 6, 8]}
-              mb={[3, 4, 5]}
-            >
-              {`Hello, I'm ${name}!`}
-            </Heading>
+            <Fade up>
+              <Heading
+                textAlign="center"
+                as="h1"
+                color="primary"
+                fontSize={[5, 6, 8]}
+                mb={[3, 4, 5]}
+              >
+                {`Hello, I'm ${name}!`}
+              </Heading>
 
-            <Heading
-              as="h2"
-              color="primary"
-              fontSize={[4, 5, 6]}
-              mb={[3, 5]}
-              textAlign="center"
-              style={centerHorizontally}
-            >
-              <TextLoop interval={5000}>
-                {roles
-                  .sort(() => deterministicBehaviour || Math.random() - 0.5)
-                  .map(text => (
-                    <Text width={[300, 500]} key={text}>
-                      {text}
-                    </Text>
-                  ))}
-              </TextLoop>
-            </Heading>
+              <Heading
+                as="h2"
+                color="primary"
+                fontSize={[4, 5, 6]}
+                mb={[3, 5]}
+                textAlign="center"
+                style={centerHorizontally}
+              >
+                <TextLoop interval={5000}>
+                  {roles
+                    .sort(() => deterministicBehaviour || Math.random() - 0.5)
+                    .map(text => (
+                      <Text width={[300, 500]} key={text}>
+                        {text}
+                      </Text>
+                    ))}
+                </TextLoop>
+              </Heading>
 
-            <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
-              {socialLinks.map(({ id, ...rest }) => (
-                <Box mx={3} fontSize={[5, 6, 6]} key={id}>
-                  <SocialLink {...rest} />
-                </Box>
-              ))}
-            </Flex>
+              <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
+                {socialLinks.map(({ id, ...rest }) => (
+                  <Box mx={3} fontSize={[5, 6, 6]} key={id}>
+                    <SocialLink {...rest} />
+                  </Box>
+                ))}
+              </Flex>
+            </Fade>
+
             <SectionLink section="about">
               {({ onClick }) => <MouseIcon onClick={onClick} />}
             </SectionLink>
