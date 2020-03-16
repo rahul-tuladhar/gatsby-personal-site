@@ -15,7 +15,7 @@ const MEDIUM_URL = 'https://medium.com'
 
 const Background = () => (
   <div>
-    {/* <Triangle
+    <Triangle
       color="backgroundDark"
       height={['15vh', '10vh']}
       width={['100vw', '100vw']}
@@ -35,7 +35,7 @@ const Background = () => (
       width={['100vw', '100vw']}
       invertX
       invertY
-    /> */}
+    />
   </div>
 )
 

@@ -7,14 +7,12 @@ import Fade from 'react-reveal/Fade'
 import Section from '../components/Section'
 import Triangle from '../components/Triangle'
 import markdownRenderer from '../components/MarkdownRenderer'
-import { SectionLink } from 'react-scroll-section'
-import MouseIcon from '../components/MouseIcon'
 
 const Background = () => (
   <div>
     <Triangle
       color="secondaryLight"
-      height={['100vh', '20vh']}
+      height={['50vh', '20vh']}
       width={['50vw', '50vw']}
       invertY
     />
@@ -90,9 +88,6 @@ const About = () => (
                 />
               </Fade>
             </Box>
-            {/* <SectionLink section="projects">
-              {({ onClick }) => <MouseIcon onClick={onClick} />}
-            </SectionLink> */}
           </Flex>
         )
       }}
