@@ -1,5 +1,6 @@
-# Gatsby Starter: Mate
+# Personal Site
 
+<!--
 [![Build Status](https://travis-ci.org/EmaSuriano/gatsby-starter-mate.svg?branch=master)](https://travis-ci.org/EmaSuriano/gatsby-starter-mate)
 [![eslint](https://img.shields.io/badge/eslint-enabled-green.svg)](https://eslint.org/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
@@ -10,19 +11,18 @@
 
 > An accessible and fast portfolio starter for Gatsby integrated with Contentful CMS.
 
-The target audience are Developers 💻 and Tech Writers ✍️.
+The target audience are Developers 💻 and Tech Writers ✍️. -->
 
-### [Check the Demo ✨](https://gatsby-starter-mate.netlify.com/)
+### [Check the Site Live! ✨](https://rahultuladhar.com/)
 
-<a href="https://www.buymeacoffee.com/emasuriano" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<!-- <a href="https://www.buymeacoffee.com/emasuriano" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a> -->
 
 ## Why? 🤔
 
-In case you are looking for a quick setup portfolio or upgrade your current, you have to definitely try Mate!
+This site was created based off the [Gatsby Starter Mate](https://github.com/EmaSuriano/gatsby-starter-mate) by Ema Suriano. Content system is based on [Contentful](https://contentful.com), which is a headless CMS where you can write the content for your page. In summary, Contentful is the Model when Gatsby with React is the View.
 
-This starter is totally content based on [Contentful](https://contentful.com), which is a headless CMS where you can write the content for your page. In summary, Contentful is the Model when Gatsby with React is the View.
-
-At the same time, as this portfolio is written with Gatsby is extremely easy to add more than one source of data! For example, the demo comes with an integration of [Medium](https://medium.com) posts based on a user name ✌️
+<!--
+At the same time, as this portfolio is written with Gatsby is extremely easy to add more than one source of data! For example, the demo comes with an integration of [Medium](https://medium.com) posts based on a user name ✌️ -->
 
 ## Features 🛠
 
@@ -35,22 +35,23 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 - SEO
 - Responsive design
 - Icons from [font-awesome](https://fontawesome.com/)
-- [Netlify](https://www.netlify.com) Deployment Friendly
+  <!-- - [Netlify](https://www.netlify.com) Deployment Friendly -->
 - Medium integration
 - Social sharing (Twitter, Facebook, Google, LinkedIn)
 - Developer tools:
   - `eslint`
   - `prettier`
-- Google Analytics integration
+    <!-- - Google Analytics integration
 - End to End with Cypress:
   - A11y testing with [Axe](https://www.deque.com/axe/)
-  - Visual Testing with [Percy](https://percy.io/)
+  - Visual Testing with [Percy](https://percy.io/) -->
+    <!--
 
 ### Lighthouse Score 💯
 
-![Lighthouse Score](media/lighthouse-score.png)
+![Lighthouse Score](media/lighthouse-score.png) -->
 
-## How to start ▶️
+<!-- ## How to start ▶️
 
 As this process needs more steps compared to other starters, I decided to made a tutorial video of how to set up your own instance of Mate. You can follow the video or jump directly to the written documentation.
 
@@ -58,7 +59,7 @@ As this process needs more steps compared to other starters, I decided to made a
   <a href="https://www.youtube.com/watch?v=YviWsypJF9c">
    <img src="https://media.giphy.com/media/LQp2DrNPPUPybUwVx9/giphy.gif" alt="Watch the tutorial"/>
   </a>
-</p>
+</p> -->
 
 If you never used Gatsby before, I highly recommend you to [Set up your development environment](https://www.gatsbyjs.org/tutorial/part-zero/)!
 
