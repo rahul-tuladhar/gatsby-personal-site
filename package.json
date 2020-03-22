@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-mate",
+  "name": "rahul_personal_site",
   "version": "2.5.2",
-  "description": "Gatsby v2 starter to create a top notch portfolio!",
+  "description": "Personal Site",
   "main": "index.js",
   "scripts": {
     "build": "gatsby clean && gatsby build",
