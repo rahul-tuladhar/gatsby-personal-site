@@ -10,13 +10,17 @@ import Logo from './Logo/Portfolio.svg'
 const capitalize = s => s && s[0].toUpperCase() + s.slice(1)
 
 const HeaderContainer = styled(Headroom)`
-  .headroom--pinned {
+  .headroom--scrolled {
     background: ${props => props.theme.colors.primaryDark};
   }
-  // background: ${props => props.theme.colors.primaryDark};
   position: absolute;
   width: 100%;
 `
+// .headroom--pinned {
+//   background: ${props => props.theme.colors.primaryDark};
+// }
+// position: absolute;
+// width: 100%;
 
 const formatLinks = allLinks =>
   Object.entries(allLinks).reduce(
@@ -36,7 +40,8 @@ const formatLinks = allLinks =>
   )
 
 const Header = () => (
-  <HeaderContainer>
+  // <HeaderContainer>
+  <Headroom>
     <Fade top>
       <Flex
         flexWrap="wrap"
@@ -70,7 +75,7 @@ const Header = () => (
 
             return (
               <Fragment>
-                {homeLink}
+                {/* {homeLink} */}
                 <Flex mr={[0, 3, 5]}>{navLinks}</Flex>
               </Fragment>
             )
@@ -78,7 +83,8 @@ const Header = () => (
         </SectionLinks>
       </Flex>
     </Fade>
-  </HeaderContainer>
+  </Headroom>
+  //</HeaderContainer>
 )
 
 export default Header
